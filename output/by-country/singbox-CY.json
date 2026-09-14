@@ -14,7 +14,7 @@
         "server_name": "deepl.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "qq"
         },
         "reality": {
           "enabled": true,
@@ -66,9 +66,10 @@
     {
       "type": "vless",
       "tag": "🇨🇾 塞浦路斯 (Cyprus) 04 - xiaohe",
-      "server": "cassiopeia.yokkastars.com",
+      "server": "5.253.30.99",
       "server_port": 40443,
-      "uuid": "e4371581-c418-4770-b09a-d630f18290a6",
+      "uuid": "511c1563-2cb6-4064-abc6-a59ee49818a8",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
         "server_name": "deepl.com",
@@ -78,8 +79,8 @@
         },
         "reality": {
           "enabled": true,
-          "public_key": "WFvn-RRJzpt2qV4xwj_R93gDr6dduIjkQKO3De3Y2Hc",
-          "short_id": "5d96"
+          "public_key": "cwmcqsfS7klQlkcoUNuATEk0NiPY-NnRb9z8rCJDQw0",
+          "short_id": "88b6"
         }
       }
     },
