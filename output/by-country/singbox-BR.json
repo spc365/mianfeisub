@@ -6,8 +6,27 @@
     {
       "type": "vless",
       "tag": "🇧🇷 巴西 (Brazil) 01 - xiaohe",
-      "server": "5.101.114.44",
-      "server_port": 2053,
+      "server": "129.151.64.169",
+      "server_port": 31867,
+      "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4",
+      "tls": {
+        "enabled": true,
+        "server_name": "cdn8848.776676.xyz",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/files",
+        "headers": {
+          "Host": "cdn8848.776676.xyz"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇧🇷 巴西 (Brazil) 02 - xiaohe",
+      "server": "62.60.152.31",
+      "server_port": 443,
       "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4",
       "tls": {
         "enabled": true,
@@ -20,7 +39,7 @@
       },
       "transport": {
         "type": "ws",
-        "path": "/collection/directory?ed=2560",
+        "path": "/go.php?ed=2560",
         "headers": {
           "Host": "cdn8848.776676.xyz"
         }
@@ -31,14 +50,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇧🇷 巴西 (Brazil) 01 - xiaohe"
+        "🇧🇷 巴西 (Brazil) 01 - xiaohe",
+        "🇧🇷 巴西 (Brazil) 02 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇧🇷 巴西 (Brazil) 01 - xiaohe"
+        "🇧🇷 巴西 (Brazil) 01 - xiaohe",
+        "🇧🇷 巴西 (Brazil) 02 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
