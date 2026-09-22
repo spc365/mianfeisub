@@ -5,22 +5,24 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇦🇹 奥地利 (Austria) 01 - xiaohe",
-      "server": "152.53.1.40",
+      "tag": "🇺🇿 乌兹别克斯坦 (Uzbekistan) 01 - xiaohe",
+      "server": "104.24.143.217",
       "server_port": 443,
-      "uuid": "edde565e-41f5-400e-84ea-7b87a3e84488",
-      "flow": "xtls-rprx-vision",
+      "uuid": "50414e45-4c5f-5a45-5553-4eef5adc237a",
       "tls": {
         "enabled": true,
-        "server_name": "at.quattro-tech.ru",
+        "server_name": "r5zenrelur2s.pqzdileiu8es.workers.dev",
+        "insecure": false,
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc",
-          "short_id": "43dcff53849b81e6"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/stream/PANEL_ZEUS/4eef5adc237a/loc-1",
+        "headers": {
+          "Host": "r5zenrelur2s.pqzdileiu8es.workers.dev"
         }
       }
     },
@@ -29,14 +31,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇦🇹 奥地利 (Austria) 01 - xiaohe"
+        "🇺🇿 乌兹别克斯坦 (Uzbekistan) 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇦🇹 奥地利 (Austria) 01 - xiaohe"
+        "🇺🇿 乌兹别克斯坦 (Uzbekistan) 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
