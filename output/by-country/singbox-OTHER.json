@@ -5,23 +5,26 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇱🇻 拉脱维亚 (Latvia) 01 - xiaohe",
-      "server": "latinki.pumpkinpie.study",
+      "tag": "🌐 其他地区 (Other) 01 - xiaohe",
+      "server": "172.67.155.68",
       "server_port": 443,
-      "uuid": "8f6e49e6-7f03-4f10-9da9-1716158d80ed",
-      "flow": "xtls-rprx-vision",
+      "uuid": "a2c57a6c-dacb-44d1-9055-fb42d4c888a5",
       "tls": {
         "enabled": true,
-        "server_name": "latinki.pumpkinpie.study",
+        "server_name": "pew.dianawmoon.dpdns.org",
+        "insecure": false,
+        "alpn": [
+          "http/1.1"
+        ],
         "utls": {
           "enabled": true,
           "fingerprint": "random"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "wHTq_owme8N6237B37GhneBcNJQtzRdIFouRkSscgnQ",
-          "short_id": "40fac5d64bc6a540"
         }
+      },
+      "transport": {
+        "type": "httpupgrade",
+        "path": "/27729/dianahtupgd",
+        "host": "pew.dianawmoon.dpdns.org"
       }
     },
     {
@@ -29,14 +32,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇱🇻 拉脱维亚 (Latvia) 01 - xiaohe"
+        "🌐 其他地区 (Other) 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇱🇻 拉脱维亚 (Latvia) 01 - xiaohe"
+        "🌐 其他地区 (Other) 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
