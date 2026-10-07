@@ -52,19 +52,7 @@ proxies:
   cipher: chacha20-ietf-poly1305
   password: WSyL4XTwNsdv
 - name: 🇪🇸 西班牙 (Spain) 06 - xiaohe
-  server: es4.h1cloud.net
-  port: 25047
-  udp: true
-  type: vless
-  uuid: 55a2940a-ae07-40b4-ab32-4d3e0617731f
-  tls: true
-  reality-opts:
-    public-key: opG0oNW-PMHi8V4E0101eEqOqPlZVKCuRkF6dcWeqBU
-    short-id: 8b7227d48365dda9
-  servername: www.apple.com
-  client-fingerprint: chrome
-- name: 🇪🇸 西班牙 (Spain) 07 - xiaohe
-  server: assets-es.pleiades.codes
+  server: 193.238.154.5
   port: 443
   udp: true
   type: vless
@@ -87,7 +75,6 @@ proxy-groups:
   - 🇪🇸 西班牙 (Spain) 04 - xiaohe
   - 🇪🇸 西班牙 (Spain) 05 - xiaohe
   - 🇪🇸 西班牙 (Spain) 06 - xiaohe
-  - 🇪🇸 西班牙 (Spain) 07 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -99,6 +86,5 @@ proxy-groups:
   - 🇪🇸 西班牙 (Spain) 04 - xiaohe
   - 🇪🇸 西班牙 (Spain) 05 - xiaohe
   - 🇪🇸 西班牙 (Spain) 06 - xiaohe
-  - 🇪🇸 西班牙 (Spain) 07 - xiaohe
 rules:
 - MATCH,PROXIES
