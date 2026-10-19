@@ -14,18 +14,28 @@ proxies:
   reality-opts:
     public-key: mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE
   servername: addons.mozilla.org
-  client-fingerprint: safari
+  client-fingerprint: chrome
+- name: 🇺🇸 美国 (United States) 02 (家宽) R46 - xiaohe
+  server: 4c2d5151.266nets.com
+  port: 12031
+  udp: true
+  type: trojan
+  password: bad06c3525a6eaee1757b34776b83892
+  sni: ixigua.com
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - xiaohe
+  - 🇺🇸 美国 (United States) 02 (家宽) R46 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - xiaohe
+  - 🇺🇸 美国 (United States) 02 (家宽) R46 - xiaohe
 rules:
 - MATCH,PROXIES
