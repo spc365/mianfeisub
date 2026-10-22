@@ -5,15 +5,36 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇦🇪 阿联酋 (UAE) 01 - xiaohe
-  server: 185.253.116.33
-  port: 14430
+  server: 45.76.87.125
+  port: 14750
   udp: true
   type: vless
-  uuid: aee7ae19-672f-49d8-8a92-aa7cdfc89f89
+  uuid: 9c090291-dd8d-454c-98df-3ca2178fcf01
+  tls: true
+  servername: ke859ch2gse1iery3hiz.e3q4a5mjld11kpj0zj8dq.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /vless
+    path: /@Marisa_kristi
+    headers:
+      Host: ke859ch2gse1iery3hiz.e3q4a5mjld11kpj0zj8dq.workers.dev
 - name: 🇦🇪 阿联酋 (UAE) 02 - xiaohe
+  server: 144.31.135.38
+  port: 9444
+  udp: true
+  type: vless
+  uuid: 01c96414-9fcd-4f79-9274-2c8d8045e48d
+  tls: true
+  servername: 9-7u3b6e.wzkija0v0du4yhk6jfyfafml3nh22kne.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: 9-7u3b6e.wzkija0v0du4yhk6jfyfafml3nh22kne.workers.dev
+- name: 🇦🇪 阿联酋 (UAE) 03 - xiaohe
   server: 84.235.244.108
   port: 22573
   udp: true
@@ -24,6 +45,21 @@ proxies:
     path: /
     headers:
       Host: uae.unixzone.us
+- name: 🇦🇪 阿联酋 (UAE) 04 - xiaohe
+  server: 128.241.25.3
+  port: 30021
+  udp: true
+  type: vless
+  uuid: afec813e-a5c7-432d-be48-2803c30eea4e
+  tls: true
+  servername: wkytah9k8oggj60.qzfi0skkopy875xhtc0l9pwds.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: wkytah9k8oggj60.qzfi0skkopy875xhtc0l9pwds.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
@@ -31,6 +67,8 @@ proxy-groups:
   - AUTO
   - 🇦🇪 阿联酋 (UAE) 01 - xiaohe
   - 🇦🇪 阿联酋 (UAE) 02 - xiaohe
+  - 🇦🇪 阿联酋 (UAE) 03 - xiaohe
+  - 🇦🇪 阿联酋 (UAE) 04 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -38,5 +76,7 @@ proxy-groups:
   proxies:
   - 🇦🇪 阿联酋 (UAE) 01 - xiaohe
   - 🇦🇪 阿联酋 (UAE) 02 - xiaohe
+  - 🇦🇪 阿联酋 (UAE) 03 - xiaohe
+  - 🇦🇪 阿联酋 (UAE) 04 - xiaohe
 rules:
 - MATCH,PROXIES
