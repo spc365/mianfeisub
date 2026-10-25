@@ -5,39 +5,49 @@
   "outbounds": [
     {
       "type": "trojan",
-      "tag": "🇪🇸 西班牙 (Spain) 01 - xiaohe",
-      "server": "185.114.72.31",
-      "server_port": 2053,
+      "tag": "🇱🇹 立陶宛 (Lithuania) 01 - xiaohe",
+      "server": "88.216.69.253",
+      "server_port": 443,
       "password": "humanity",
       "tls": {
         "enabled": true,
-        "server_name": "www.calmlunch.com",
-        "insecure": false
+        "server_name": "www.pleadcourt.org",
+        "insecure": false,
+        "alpn": [
+          "http/1.1"
+        ]
       },
       "transport": {
         "type": "ws",
         "path": "/assignment",
         "headers": {
-          "Host": "www.calmlunch.com"
+          "Host": "www.pleadcourt.org"
         }
       }
     },
     {
       "type": "trojan",
-      "tag": "🇪🇸 西班牙 (Spain) 02 - xiaohe",
-      "server": "185.114.72.31",
-      "server_port": 2053,
+      "tag": "🇱🇹 立陶宛 (Lithuania) 02 - xiaohe",
+      "server": "88.216.69.253",
+      "server_port": 443,
       "password": "humanity",
       "tls": {
         "enabled": true,
-        "server_name": "www.calmlunch.com",
-        "insecure": false
+        "server_name": "www.pleadcourt.org",
+        "insecure": false,
+        "alpn": [
+          "http/1.1"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "unsafe"
+        }
       },
       "transport": {
         "type": "ws",
         "path": "/assignment",
         "headers": {
-          "Host": "www.calmlunch.com"
+          "Host": "www.pleadcourt.org"
         }
       }
     },
@@ -46,16 +56,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇪🇸 西班牙 (Spain) 01 - xiaohe",
-        "🇪🇸 西班牙 (Spain) 02 - xiaohe"
+        "🇱🇹 立陶宛 (Lithuania) 01 - xiaohe",
+        "🇱🇹 立陶宛 (Lithuania) 02 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇪🇸 西班牙 (Spain) 01 - xiaohe",
-        "🇪🇸 西班牙 (Spain) 02 - xiaohe"
+        "🇱🇹 立陶宛 (Lithuania) 01 - xiaohe",
+        "🇱🇹 立陶宛 (Lithuania) 02 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

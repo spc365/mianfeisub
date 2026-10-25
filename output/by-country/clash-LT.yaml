@@ -4,24 +4,24 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇪🇸 西班牙 (Spain) 01 - xiaohe
-  server: 185.114.72.31
-  port: 2053
+- name: 🇱🇹 立陶宛 (Lithuania) 01 - xiaohe
+  server: 88.216.69.253
+  port: 443
   udp: true
   type: trojan
   password: humanity
-  sni: www.calmlunch.com
+  sni: www.pleadcourt.org
   skip-cert-verify: false
   network: ws
   ws-opts:
     path: /assignment
-- name: 🇪🇸 西班牙 (Spain) 02 - xiaohe
-  server: 185.114.72.31
-  port: 2053
+- name: 🇱🇹 立陶宛 (Lithuania) 02 - xiaohe
+  server: 88.216.69.253
+  port: 443
   udp: true
   type: trojan
   password: humanity
-  sni: www.calmlunch.com
+  sni: www.pleadcourt.org
   skip-cert-verify: false
   network: ws
   ws-opts:
@@ -31,14 +31,14 @@ proxy-groups:
   type: select
   proxies:
   - AUTO
-  - 🇪🇸 西班牙 (Spain) 01 - xiaohe
-  - 🇪🇸 西班牙 (Spain) 02 - xiaohe
+  - 🇱🇹 立陶宛 (Lithuania) 01 - xiaohe
+  - 🇱🇹 立陶宛 (Lithuania) 02 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇪🇸 西班牙 (Spain) 01 - xiaohe
-  - 🇪🇸 西班牙 (Spain) 02 - xiaohe
+  - 🇱🇹 立陶宛 (Lithuania) 01 - xiaohe
+  - 🇱🇹 立陶宛 (Lithuania) 02 - xiaohe
 rules:
 - MATCH,PROXIES
