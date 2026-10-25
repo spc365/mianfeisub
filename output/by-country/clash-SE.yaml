@@ -16,7 +16,7 @@ proxies:
     headers:
       Host: 5.178.109.174
 - name: 🇸🇪 瑞典 (Sweden) 02 - xiaohe
-  server: 50.7.38.243
+  server: promo.betust.net
   port: 443
   udp: true
   type: hysteria2
