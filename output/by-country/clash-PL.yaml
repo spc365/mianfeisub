@@ -11,13 +11,11 @@ proxies:
   type: vless
   uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
 - name: 🇵🇱 波兰 (Poland) 02 - xiaohe
-  server: 70.34.252.255
-  port: 443
+  server: 155.117.5.208
+  port: 20001
   udp: true
-  type: trojan
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  sni: browseexecutivejobopeningsandenhanceleadershipcareer.com
-  skip-cert-verify: false
+  type: vless
+  uuid: 8e8210b7-71a4-4799-8b9b-2e69698b1eaf
 - name: 🇵🇱 波兰 (Poland) 03 - xiaohe
   server: 77.232.135.141
   port: 8445
@@ -32,11 +30,18 @@ proxies:
   grpc-opts:
     grpc-service-name: beru-pl
 - name: 🇵🇱 波兰 (Poland) 04 - xiaohe
-  server: site.teslamotor.site
-  port: 20001
+  server: 54.37.131.126
+  port: 80
   udp: true
-  type: vless
-  uuid: 8e8210b7-71a4-4799-8b9b-2e69698b1eaf
+  type: vmess
+  uuid: 6deef9ad-1357-443d-f95c-cb18952c20b3
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: google.whatsapp.snapp.torob.basalam.hesanid8.ir.
 - name: 🇵🇱 波兰 (Poland) 05 - xiaohe
   server: 2.26.6.1
   port: 2087
