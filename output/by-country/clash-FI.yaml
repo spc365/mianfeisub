@@ -16,7 +16,7 @@ proxies:
     headers:
       Host: 45.144.234.157
 - name: 🇫🇮 芬兰 (Finland) 02 - xiaohe
-  server: hw3.divarkhaghazi.com
+  server: 65.109.210.221
   port: 465
   udp: true
   type: vless
@@ -36,35 +36,26 @@ proxies:
   udp: true
   type: vless
   uuid: 7b22dce8-7ebd-425b-8ca4-7b6190321985
+  flow: xtls-rprx-vision
   tls: true
+  reality-opts:
+    public-key: CegqLjzOImUmYD9ZdpOOG65UgNTGeQfRmpIni8iraB0
+    short-id: 7be1e9c243451b14
   servername: b.fi-1.bnc-gt.co.uk
-  skip-cert-verify: false
   client-fingerprint: firefox
-  network: grpc
-  grpc-opts:
-    grpc-service-name: grpc
 - name: 🇫🇮 芬兰 (Finland) 04 - xiaohe
-  server: 46.62.204.134
+  server: webdisk.jaggyslawa.org
   port: 443
   udp: true
-  type: trojan
-  password: humanity
-  sni: www.pleadcourt.org
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /assignment
-- name: 🇫🇮 芬兰 (Finland) 05 - xiaohe
-  server: 46.62.204.134
-  port: 443
-  udp: true
-  type: trojan
-  password: humanity
-  sni: www.pleadcourt.org
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /assignment
+  type: vless
+  uuid: b62e3646-b84d-443c-9c94-718b646502e0
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: zfsjt2A8ur0qHWIuCG7F9W4wZN3VTuL6fkTljC-9R0s
+    short-id: dda5f542d835
+  servername: www.foxsports.com
+  client-fingerprint: edge
 proxy-groups:
 - name: PROXIES
   type: select
@@ -74,7 +65,6 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 02 - xiaohe
   - 🇫🇮 芬兰 (Finland) 03 - xiaohe
   - 🇫🇮 芬兰 (Finland) 04 - xiaohe
-  - 🇫🇮 芬兰 (Finland) 05 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -84,6 +74,5 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 02 - xiaohe
   - 🇫🇮 芬兰 (Finland) 03 - xiaohe
   - 🇫🇮 芬兰 (Finland) 04 - xiaohe
-  - 🇫🇮 芬兰 (Finland) 05 - xiaohe
 rules:
 - MATCH,PROXIES
