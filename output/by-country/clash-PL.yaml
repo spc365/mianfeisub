@@ -5,6 +5,21 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇵🇱 波兰 (Poland) 01 - xiaohe
+  server: 8.6.112.0
+  port: 8443
+  udp: true
+  type: vless
+  uuid: 8eb92a78-ec8d-4ff6-8a2d-8b801367be87
+  tls: true
+  servername: KAmraN02-3rpN9m-2.KAMran-02.WORKErS.dEV
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: KAmraN02-3rpN9m-2.KAMran-02.WORKErS.dEV
+- name: 🇵🇱 波兰 (Poland) 02 - xiaohe
   server: 2.26.6.1
   port: 2087
   udp: true
@@ -14,7 +29,7 @@ proxies:
   servername: 2.26.6.1
   skip-cert-verify: true
   client-fingerprint: chrome
-- name: 🇵🇱 波兰 (Poland) 02 - xiaohe
+- name: 🇵🇱 波兰 (Poland) 03 - xiaohe
   server: 70.34.252.255
   port: 443
   udp: true
@@ -29,6 +44,7 @@ proxy-groups:
   - AUTO
   - 🇵🇱 波兰 (Poland) 01 - xiaohe
   - 🇵🇱 波兰 (Poland) 02 - xiaohe
+  - 🇵🇱 波兰 (Poland) 03 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -36,5 +52,6 @@ proxy-groups:
   proxies:
   - 🇵🇱 波兰 (Poland) 01 - xiaohe
   - 🇵🇱 波兰 (Poland) 02 - xiaohe
+  - 🇵🇱 波兰 (Poland) 03 - xiaohe
 rules:
 - MATCH,PROXIES
