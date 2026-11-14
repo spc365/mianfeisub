@@ -32,7 +32,7 @@
       "tls": {
         "enabled": true,
         "server_name": "hk.catxstar.com",
-        "insecure": true
+        "insecure": false
       }
     },
     {
