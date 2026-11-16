@@ -5,24 +5,22 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🌐 其他地区 (Other) 01 - xiaohe",
-      "server": "104.21.23.29",
+      "tag": "🇪🇬 埃及 (Egypt) 01 - xiaohe",
+      "server": "41.196.0.128",
       "server_port": 443,
-      "uuid": "48eb716d-6121-43c1-9dd2-9a2a25bf3178",
+      "uuid": "8197b9b9-8945-460f-99c9-325ef8a8a7c3",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "ws137.mydosss.ccwu.cc",
-        "insecure": false,
+        "server_name": "eg1.gofizz.in",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/3b575ddc8596",
-        "headers": {
-          "Host": "ws137.mydosss.ccwu.cc"
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "tyklNbOfb-FctP-J1OQa1yUHPY9p4co70RyYuRe9nR8",
+          "short_id": "f68db13f"
         }
       }
     },
@@ -31,14 +29,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🌐 其他地区 (Other) 01 - xiaohe"
+        "🇪🇬 埃及 (Egypt) 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🌐 其他地区 (Other) 01 - xiaohe"
+        "🇪🇬 埃及 (Egypt) 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
