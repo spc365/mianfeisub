@@ -6,7 +6,7 @@
     {
       "type": "vless",
       "tag": "🌐 其他地区 (Other) 01 - xiaohe",
-      "server": "api.opencode.ai",
+      "server": "104.18.10.66",
       "server_port": 443,
       "uuid": "2874e26b-45e3-4d12-9e01-3f5a1c6a7105",
       "tls": {
