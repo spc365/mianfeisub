@@ -6,12 +6,12 @@
     {
       "type": "hysteria2",
       "tag": "🇹🇼 中国台湾 (Taiwan) 01 - xiaohe",
-      "server": "160.187.100.109",
+      "server": "vpn-tw-002.fastervpn.world",
       "server_port": 443,
       "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
       "tls": {
         "enabled": true,
-        "server_name": "off",
+        "server_name": "127.0.0.1",
         "insecure": true
       }
     },
@@ -23,14 +23,14 @@
       "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
       "tls": {
         "enabled": true,
-        "server_name": "https%3a%2f%2ft.me%2fwangcai2",
+        "server_name": "https%3a%2f%2ft.me%2foneclickvpnkeys",
         "insecure": true
       }
     },
     {
       "type": "vmess",
       "tag": "🇹🇼 中国台湾 (Taiwan) 03 - xiaohe",
-      "server": "afzuv.xiaoyan.io",
+      "server": "162.19.192.89",
       "server_port": 16616,
       "uuid": "904f0569-8695-466f-97cf-0de2face1b46",
       "security": "auto",
