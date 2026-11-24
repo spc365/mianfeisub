@@ -4,16 +4,12 @@
   },
   "outbounds": [
     {
-      "type": "hysteria2",
+      "type": "shadowsocks",
       "tag": "🇷🇺 俄罗斯 (Russia) 01 - xiaohe",
-      "server": "103.88.243.142",
-      "server_port": 11592,
-      "password": "41edb44c8e",
-      "tls": {
-        "enabled": true,
-        "server_name": "srv-17e124.21freedom.net",
-        "insecure": true
-      }
+      "server": "130.49.189.158",
+      "server_port": 43558,
+      "method": "chacha20-ietf-poly1305",
+      "password": "LNc9h/4NA9Q6ZHNeYHoT5X/fR9aoE9KQR1SWhVDHBog="
     },
     {
       "type": "vless",
@@ -27,7 +23,7 @@
         "insecure": false,
         "utls": {
           "enabled": true,
-          "fingerprint": "qq"
+          "fingerprint": "firefox"
         }
       },
       "transport": {
@@ -38,53 +34,37 @@
     {
       "type": "vless",
       "tag": "🇷🇺 俄罗斯 (Russia) 03 - xiaohe",
-      "server": "147.45.175.81",
+      "server": "188.68.216.33",
       "server_port": 443,
-      "uuid": "c90395e6-2140-47ad-a54d-9b166729d3ef",
+      "uuid": "08ef7604-b3a5-0001-b264-0038fa7c44fc",
       "tls": {
         "enabled": true,
-        "server_name": "xsru2.freeddns.org",
+        "server_name": "pmdhivnevikmltdhqp.fcloudservices.site",
         "insecure": false,
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "wsru",
-        "headers": {
-          "Host": "xsru2.freeddns.org"
+          "fingerprint": "chrome"
         }
       }
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇷🇺 俄罗斯 (Russia) 04 - xiaohe",
-      "server": "48.103.218.77",
-      "server_port": 18443,
-      "method": "aes-256-gcm",
-      "password": "5mKjXAGrliIAlYwWDeFzkCEMIgQdFQLe"
-    },
-    {
       "type": "vless",
-      "tag": "🇷🇺 俄罗斯 (Russia) 05 - xiaohe",
-      "server": "48.103.133.47",
-      "server_port": 8443,
-      "uuid": "2ed34e7c-45c5-4e0e-bcab-42fe99a7bd25",
-      "flow": "xtls-rprx-vision",
+      "tag": "🇷🇺 俄罗斯 (Russia) 04 - xiaohe",
+      "server": "xssite.webredirect.org",
+      "server_port": 443,
+      "uuid": "c90395e6-2140-47ad-a54d-9b166729d3ef",
       "tls": {
         "enabled": true,
-        "server_name": "apple.com",
+        "server_name": "xssite.webredirect.org",
+        "insecure": false,
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc",
-          "short_id": "6ba85179e30d4fc2"
+          "fingerprint": "random"
         }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "grpc-ru"
       }
     },
     {
@@ -95,8 +75,7 @@
         "🇷🇺 俄罗斯 (Russia) 01 - xiaohe",
         "🇷🇺 俄罗斯 (Russia) 02 - xiaohe",
         "🇷🇺 俄罗斯 (Russia) 03 - xiaohe",
-        "🇷🇺 俄罗斯 (Russia) 04 - xiaohe",
-        "🇷🇺 俄罗斯 (Russia) 05 - xiaohe"
+        "🇷🇺 俄罗斯 (Russia) 04 - xiaohe"
       ]
     },
     {
@@ -106,8 +85,7 @@
         "🇷🇺 俄罗斯 (Russia) 01 - xiaohe",
         "🇷🇺 俄罗斯 (Russia) 02 - xiaohe",
         "🇷🇺 俄罗斯 (Russia) 03 - xiaohe",
-        "🇷🇺 俄罗斯 (Russia) 04 - xiaohe",
-        "🇷🇺 俄罗斯 (Russia) 05 - xiaohe"
+        "🇷🇺 俄罗斯 (Russia) 04 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
