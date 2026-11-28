@@ -12,7 +12,7 @@ proxies:
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
 - name: 🇨🇭 瑞士 (Switzerland) 02 - xiaohe
-  server: 23.166.88.189
+  server: 79.127.184.104
   port: 19999
   udp: true
   type: ss
@@ -55,7 +55,7 @@ proxies:
   udp: true
   type: hysteria2
   password: 84a506ca5aca505696a454d828420b3f
-  sni: 'off'
+  sni: www.bing.com
   skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
